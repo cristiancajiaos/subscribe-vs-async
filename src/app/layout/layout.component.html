@@ -1,8 +1,14 @@
 <div class="row">
   <div class="col-12 col-lg-6">
     <h5>Suscripción con la función subscribe</h5>
+    <pre *ngIf="objects">
+{{objects | json}}
+    </pre>
   </div>
   <div class="col-12 col-lg-6">
     <h5>Suscripción con async</h5>
+    <pre>
+{{(objectsWithAsyncPipe | async) | json}}
+    </pre>
   </div>
 </div>
